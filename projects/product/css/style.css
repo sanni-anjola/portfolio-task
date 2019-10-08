@@ -1,0 +1,303 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --icon-color: #ff9900;
+}
+
+body,
+header,
+section,
+main,
+footer,
+article,
+div {
+    width: 100%;
+    display: block;
+
+}
+
+body {
+    background-color: rgba(125, 125, 125, 0.5);
+    background-color: #ccc;
+    font-family: 'Roboto', sans-serif;
+    width: 100%;
+    overflow-y: scroll;
+}
+
+div.container {
+    width: 86%;
+    padding: 0 2%;
+    margin: 0 auto;
+    color: #2A2B2A;
+}
+
+/*Navigation Bar Section*/
+#header nav#navbar {
+    width: 88%;
+    margin: 0 auto;
+    position: fixed;
+    top: 0%;
+    left: 6%;
+    z-index: 1000;
+    padding-top: 1%;
+    background-color: #ccc;
+}
+
+#header nav#navbar ul {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    list-style: none;
+
+}
+
+#header nav#navbar ul li {
+    display: inline-block;
+    width: 12%;
+}
+
+#header nav#navbar ul li:first-child {
+    margin-right: auto;
+    width: 7%
+}
+
+
+#header nav#navbar ul li img {
+    display: block;
+    width: 100%;
+}
+
+#header nav#navbar ul li a {
+    display: block;
+    text-decoration: none;
+    font-size: 0.8em;
+    line-height: 1.2em;
+    text-align: center;
+    color: inherit;
+}
+
+/*######### Main Section ###########*/
+main {
+    width: 80%;
+    margin: 6% auto;
+}
+
+main section#form-elements {
+    height: 30vh;
+    text-align: center;
+}
+
+main section#form-elements h2 {
+    margin: 2% 0;
+}
+
+main section#form-elements form {}
+
+main section#form-elements form input[type=email] {
+    width: 45%;
+    padding: 0.3%;
+    font-size: 1em;
+}
+
+main section#form-elements form input[type=email]:focus {
+    outline: 1px solid #FFA400;
+}
+
+main section#form-elements form input[type=submit] {
+    display: block;
+    width: 15%;
+    margin: 1% auto;
+    font-size: 1.1em;
+    line-height: 1.5em;
+    background-color: var(--icon-color);
+    border: none;
+}
+
+main section#features {
+    margin-bottom: 3%;
+}
+
+main section#features>div {
+    margin: 4% 0;
+    text-align: left;
+}
+
+main section#features>div i {
+    display: inline-block;
+    width: 5%;
+    margin-right: 3%;
+    color: var(--icon-color);
+    vertical-align: middle;
+}
+
+main section#features>div div {
+    display: inline-block;
+    width: 90%;
+    vertical-align: middle;
+}
+
+main section.video-container {
+    width: 100%;
+    text-align: center;
+    margin: 3% auto;
+}
+
+main section.video-container video {
+    width: 80%;
+}
+
+main section#pricing {
+    text-align: center;
+}
+
+main section#pricing>div {
+    display: inline-block;
+    width: 30%;
+    margin: 0 1%;
+    border: 1px solid #2A2B2A;
+}
+
+main section#pricing>div h3 {
+    background-color: #b2b2b2;
+    font-size: 1em;
+    line-height: 1.5em;
+}
+
+main section#pricing>div h4 {
+    font-size: 1.2em;
+    line-height: 1.7em;
+}
+
+main section#pricing>div ul {
+    list-style: none;
+}
+
+main section#pricing>div ul li {
+    font-size: 1em;
+    line-height: 1.5em;
+}
+
+main section#pricing>div button {
+    font-size: 0.8em;
+    line-height: 1.2em;
+    background-color: var(--icon-color);
+    padding: 2%;
+    margin: 3%;
+}
+
+footer {
+    width: 72.8%;
+    margin: 0 auto;
+    padding: 2%;
+    background-color: #b2b2b2;
+    text-align: right;
+}
+
+footer a {
+    display: inline-block;
+    width: 10%;
+    text-decoration: none;
+    color: inherit;
+}
+
+/*############## Mobile Section #################*/
+
+@media only screen and (max-width: 750px) {
+
+    div.container {
+        width: 100%;
+    }
+
+    /*Navigation Bar Section*/
+    #header nav#navbar {
+        width: 100%;
+        margin: 0 auto;
+        position: fixed;
+        top: 0%;
+        left: 0%;
+        z-index: 1000;
+        padding-top: 1%;
+        background-color: #ccc;
+    }
+
+    #header nav#navbar ul {
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+    #header nav#navbar ul li:first-child {
+        margin: 0;
+    }
+
+    #header nav#navbar ul li {
+        display: inline-block;
+        width: 30%;
+        margin: 1% 0;
+    }
+
+    /*Main Section*/
+
+    main {
+        width: 100%;
+        margin: 4% auto;
+        margin-top: 20%;
+    }
+
+    main section#form-elements {
+        height: 30vh;
+        text-align: center;
+    }
+
+    main section#form-elements h2 {
+        margin: 2% 0;
+    }
+
+    main section#form-elements form {}
+
+    main section#form-elements form input[type=email] {
+        padding: 0.2%;
+        font-size: 0.8em;
+    }
+
+    main section#form-elements form input[type=email]:focus {
+        outline: 1px solid #FFA400;
+    }
+
+    main section#form-elements form input[type=submit] {
+        width: 25%;
+        font-size: 1em;
+    }
+
+    main section#features>div {
+        text-align: center;
+    }
+
+    main section#features>div i {
+        display: none;
+    }
+
+    main section#pricing {
+        text-align: center;
+    }
+
+    main section#pricing>div {
+        display: block;
+        width: 40%;
+        margin: 3% auto;
+    }
+
+    /* Footer Section */
+
+    footer {
+        width: 100%;
+        margin: 0;
+        padding-left: 0;
+    }
+
+}

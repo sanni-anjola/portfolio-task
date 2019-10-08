@@ -1,0 +1,150 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: aqua;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+header h1 {
+    text-align: center;
+}
+
+main {
+    text-align: center;
+    background-color: #F1F1F1;
+}
+
+/*main p {
+    margin: 2% 0;
+}*/
+
+main form {
+    font-size: 1.2em;
+    line-height: 1.4em;
+    width: 80%;
+    margin: 0 auto;
+    padding: 10px;
+    padding-right: 10%;
+}
+
+
+.group {
+    display: block;
+}
+
+.group :first-child {
+    display: inline-block;
+    width: 45%;
+    text-align: right;
+    margin-right: 10px;
+}
+
+.group :last-child {
+    display: inline-block;
+    margin: 5px 0;
+    width: 35%;
+}
+
+.group div:last-child {
+    text-align: left;
+}
+
+.group div:last-child>select {
+    width: 50%
+}
+
+input[type=text],
+input[type=number],
+input[type=email],
+select {
+    height: 25px;
+}
+
+.radio-section p {
+    display: inline-block;
+    width: 45%;
+    text-align: right;
+    vertical-align: top;
+    margin: 5px 0;
+    margin-right: 10px;
+}
+
+.radio-section div {
+    display: inline-block;
+    width: 35%;
+    text-align: left;
+    margin: 5px 0;
+}
+
+.radio-section div>label {
+    display: block;
+}
+
+.textarea-sec label {
+    vertical-align: top;
+}
+
+input[type=text]:focus,
+input[type=number]:focus,
+input[type=email]:focus,
+textarea:focus {
+    outline: 1px solid red;
+}
+
+
+input[type="submit"] {
+    display: block;
+    margin: 1% auto;
+    padding: 1% 2%;
+    background-color: rgba(0, 0, 220, 0.8);
+    color: white;
+    border: none;
+    font-size: 1em;
+    line-height: 1.2em;
+    text-align: center;
+    border-radius: 5%;
+}
+
+
+@media only screen and (max-width: 600px) {
+
+    .group :first-child {
+        width: 100%;
+        text-align: left;
+    }
+
+    .group :last-child {
+        width: 100%;
+    }
+
+    .group div:last-child {
+        text-align: left;
+    }
+
+    input[type=text],
+    input[type=number],
+    input[type=email],
+    select {
+        height: 20px;
+    }
+
+    .radio-section p {
+        width: 100%;
+        text-align: left;
+    }
+
+    .radio-section div {
+        width: 100%;
+    }
+
+    .radio-section div>label {
+        display: block;
+    }
+}
